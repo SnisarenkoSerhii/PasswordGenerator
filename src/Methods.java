@@ -25,6 +25,7 @@ public class Methods {
             char c = pullForSimplePassword[r.nextInt(pullForSimplePassword.length)];
             smallPassword[i] = c;
         }
+        System.out.print("Here is your password: ");
         System.out.println(toString(smallPassword));
         return smallPassword;
     }
@@ -41,6 +42,7 @@ public class Methods {
             char c2 = pullForSimplePassword[r.nextInt(pullForSimplePassword.length)];
             prefix[i] = c2;
         }
+        System.out.print("Here is your password: ");
         System.out.println(toString(prefix) + "_" +toString(smallPassword));
         return smallPassword;
     }
@@ -56,6 +58,7 @@ public class Methods {
             char c2 = pullForSimplePassword[r.nextInt(pullForSimplePassword.length)];
             prefix[i] = c2;
         }
+        System.out.print("Here is your password: ");
         System.out.println(toString(prefix) + "_" +toString(complexPassword));
         return complexPassword;
     }

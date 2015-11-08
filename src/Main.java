@@ -16,7 +16,8 @@ public class Main {
         int choice = input.nextInt();
         switch (choice) {
             case 1: {
-                System.out.println("Enter the length of password : ");
+                System.out.println("Enter the length of password(recommended length " +
+                        "of password is between 8 and 32 symbols) : ");
                 Scanner input2 = new Scanner(System.in);
                 int length = input2.nextInt();
                 m.simplePasswordGenerator(length);
@@ -24,7 +25,8 @@ public class Main {
             break;
 
             case 2: {
-                System.out.println("Enter the length of password : ");
+                System.out.println("Enter the length of password(recommended length " +
+                        "of password is between 8 and 32 symbols) : ");
                 Scanner input2 = new Scanner(System.in);
                 int length = input2.nextInt();
                 m.mediumPasswordGenerator(length);
@@ -32,7 +34,8 @@ public class Main {
             break;
 
             case 3: {
-                System.out.println("Enter the length of password : ");
+                System.out.println("Enter the length of password(recommended length " +
+                        "of password is between 8 and 32 symbols) : ");
                 Scanner input2 = new Scanner(System.in);
                 int length = input2.nextInt();
                 m.complexPasswordGenerator(length);
