@@ -12,10 +12,10 @@ public class SimplePassword {
         Random r = new Random();
         smallPassword = new char[length];
         for (int i = 0; i < length; i++) {
-            char c = Storage.PULL_FOR_SIMPLE_PASSWORD[r.nextInt(Storage.PULL_FOR_SIMPLE_PASSWORD.length)];
+            char c = Service.PULL_FOR_SIMPLE_PASSWORD[r.nextInt(Service.PULL_FOR_SIMPLE_PASSWORD.length)];
             smallPassword[i] = c;
         }
-        System.out.println(Storage.toString(smallPassword));
+        System.out.println(Service.toString(smallPassword));
         return smallPassword;
     }
 }

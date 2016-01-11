@@ -8,7 +8,7 @@ import java.util.Scanner;
 /**
  * Created by Sergey on 07.11.2015.
  */
-public class Storage {
+public class Service {
 
     public static final char[] PULL_FOR_SIMPLE_PASSWORD = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
             'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D',
@@ -33,32 +33,32 @@ public class Storage {
         int choice = input.nextInt();
         switch (choice) {
             case 1: {
-                Storage.generateSimplePassword();
+                Service.generateSimplePassword();
             }
             break;
 
             case 2: {
-                Storage.generateMediumPassword();
+                Service.generateMediumPassword();
             }
             break;
 
             case 3: {
-                Storage.generateComplexPassword();
+                Service.generateComplexPassword();
             }
             break;
 
             case 4: {
-                Storage.generateManySimplePasswords();
+                Service.generateManySimplePasswords();
             }
             break;
 
             case 5: {
-                Storage.generateManyMediumPasswords();
+                Service.generateManyMediumPasswords();
             }
             break;
 
             case 6: {
-                Storage.generateManyComplexPasswords();
+                Service.generateManyComplexPasswords();
             }
             break;
 
@@ -83,7 +83,7 @@ public class Storage {
 
         System.out.println("Here is your passwords: ");
         for (int i = 0; i < amount; i++) {
-            passwords[i] = Storage.toString(complexPassword.complexPasswordGenerator(length));
+            passwords[i] = Service.toString(complexPassword.complexPasswordGenerator(length));
         }
         out.write(Arrays.toString(passwords));
         out.close();
@@ -104,7 +104,7 @@ public class Storage {
 
         System.out.println("Here is your passwords: ");
         for (int i = 0; i < amount; i++) {
-            passwords[i] = Storage.toString(mediumPassword.mediumPasswordGenerator(length));
+            passwords[i] = Service.toString(mediumPassword.mediumPasswordGenerator(length));
         }
         out.write(Arrays.toString(passwords));
         out.close();
@@ -125,7 +125,7 @@ public class Storage {
 
         System.out.println("Here is your passwords: ");
         for (int i = 0; i < amount; i++) {
-            passwords[i] = Storage.toString(simplePassword.simplePasswordGenerator(length));
+            passwords[i] = Service.toString(simplePassword.simplePasswordGenerator(length));
         }
         out.write(Arrays.toString(passwords));
         out.close();
